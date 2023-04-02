@@ -1,7 +1,11 @@
+import AudioPlayer from "./components/AudioPlayer";
+import Background from "./components/Background";
+
 function App() {
   return (
     <div>
-      <div>hello world</div>
+      <Background></Background>
+      <AudioPlayer></AudioPlayer>
     </div>
   );
 }

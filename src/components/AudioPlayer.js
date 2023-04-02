@@ -24,7 +24,7 @@ function AudioPlayer() {
         src="assets/bg-audio/lofi1.mp3"
         preload="none"
         ref={audioRef}></audio>
-      <div className="bg-black/40 w-fit space-x-5 px-2 pt-1 rounded-md">
+      <div className="bg-black/40 w-fit space-x-5 px-2 py-1 rounded-md flex">
         <button>
           <AiFillStepBackward size={25} color="white"></AiFillStepBackward>
         </button>

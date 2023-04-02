@@ -2,6 +2,7 @@ import React from "react";
 import AudioPlayer from "./AudioPlayer";
 import MuteAll from "./MuteAll";
 import CurrentTime from "./CurrentTime";
+import RainDrop from "./RainDrop";
 
 function Header() {
   return (
@@ -12,9 +13,10 @@ function Header() {
             Dev<span className="text-cyan-400">Focous</span>
           </h2>
         </div>
-        <div className="mr-60 flex justify-start space-x-5 content-center">
+        <div className="mr-60 flex justify-start space-x-5 items-center">
           <CurrentTime></CurrentTime>
           <AudioPlayer></AudioPlayer>
+          <RainDrop></RainDrop>
           {/* <MuteAll></MuteAll> */}
         </div>
       </div>

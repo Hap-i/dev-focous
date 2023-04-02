@@ -15,7 +15,7 @@ function CurrentTime() {
   useEffect(() => {
     setInterval(() => {
       setcurrentTime(new Date());
-    }, 60000);
+    }, 1000);
   }, []);
   return (
     <div className="mr-10">

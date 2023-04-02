@@ -8,6 +8,7 @@ function Background() {
         autoPlay
         loop
         muted
+        preload="none"
         className="w-full h-screen object-cover bg-center opacity-90"></video>
     </div>
   );

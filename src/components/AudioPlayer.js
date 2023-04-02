@@ -24,19 +24,19 @@ function AudioPlayer() {
         src="assets/bg-audio/lofi1.mp3"
         preload="none"
         ref={audioRef}></audio>
-      <div className="bg-black/40 w-fit space-x-5 px-2 py-1 rounded-lg">
+      <div className="bg-black/40 w-fit space-x-5 px-2 pt-1 rounded-md">
         <button>
-          <AiFillStepBackward size={23} color="white"></AiFillStepBackward>
+          <AiFillStepBackward size={25} color="white"></AiFillStepBackward>
         </button>
         <button onClick={playpause}>
           {isPlaying ? (
-            <AiFillPauseCircle size={23} color="white"></AiFillPauseCircle>
+            <AiFillPauseCircle size={25} color="white"></AiFillPauseCircle>
           ) : (
-            <AiFillPlayCircle size={23} color="white"></AiFillPlayCircle>
+            <AiFillPlayCircle size={25} color="white"></AiFillPlayCircle>
           )}
         </button>
         <button>
-          <AiOutlineStepForward size={23} color="white"></AiOutlineStepForward>
+          <AiOutlineStepForward size={25} color="white"></AiOutlineStepForward>
         </button>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import Background from "./components/Background";
+import BgVideoSelectBox from "./components/BgVideoSelectBox";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 
@@ -9,6 +10,7 @@ function App() {
       <Background></Background>
       <Header></Header>
       <Sidebar></Sidebar>
+      <BgVideoSelectBox></BgVideoSelectBox>
     </div>
   );
 }

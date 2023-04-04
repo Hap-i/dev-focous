@@ -6,7 +6,7 @@ import { MdTimer } from "react-icons/md";
 
 function Sidebar() {
   return (
-    <div className="absolute top-[30%] left-[93%]">
+    <div className="absolute top-[30%] right-[4%]">
       <div className="flex flex-col space-y-7 bg-black/40 py-6 px-2 rounded-md">
         <button>
           <AiFillControl size={25} color="white"></AiFillControl>

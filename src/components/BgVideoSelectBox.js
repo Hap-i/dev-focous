@@ -2,7 +2,7 @@ import React from "react";
 
 function BgVideoSelectBox() {
   return (
-    <div className="absolute top-[20%] left-[68%]">
+    <div className="absolute top-[20%] right-[8%]">
       <div
         className="space-y-4 w-[350px] h-[500px] bg-black/50
       overflow-auto no-scrollbar px-4 py-5 rounded-2xl">

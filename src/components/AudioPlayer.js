@@ -16,7 +16,7 @@ function AudioPlayer() {
   const audioRef = useRef();
   const { musicVol } = useSelector((state) => state.audioVol);
   useEffect(() => {
-    setcurrentSong(SongsData[0]);
+    setcurrentSong(SongsData[Math.floor(Math.random() * SongsData.length + 1)]);
   }, []);
   useEffect(() => {
     if (isPlaying === true) {

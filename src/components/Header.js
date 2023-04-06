@@ -17,6 +17,7 @@ function Header() {
           <CurrentTime></CurrentTime>
           <AudioPlayer></AudioPlayer>
           <RainDrop></RainDrop>
+          <MuteAll></MuteAll>
           {/* <MuteAll></MuteAll> */}
         </div>
       </div>

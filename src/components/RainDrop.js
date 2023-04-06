@@ -1,11 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FaRegCircle, FaRegDotCircle } from "react-icons/fa";
+import {
+  BsFillCloudLightningRainFill,
+  BsCloudLightningRain,
+} from "react-icons/bs";
+
 import { useSelector } from "react-redux";
 
 function RainDrop() {
   const rainDropAudioRef = useRef();
   const { muteAll } = useSelector((state) => state.muteAll);
   const [isPlaying, setisPlaying] = useState(false);
+  const { rainVol } = useSelector((state) => state.audioVol);
   function playPause() {
     if (isPlaying) {
       rainDropAudioRef.current.pause();
@@ -23,6 +28,9 @@ function RainDrop() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [muteAll]);
+  useEffect(() => {
+    rainDropAudioRef.current.volume = rainVol;
+  }, [rainVol]);
   return (
     <div>
       <div>
@@ -33,9 +41,13 @@ function RainDrop() {
           preload="none"></audio>
         <button onClick={playPause} data-te-toggle="tooltip" title="Rain">
           {isPlaying ? (
-            <FaRegDotCircle size={25} color="white"></FaRegDotCircle>
+            <BsFillCloudLightningRainFill
+              size={25}
+              color="white"></BsFillCloudLightningRainFill>
           ) : (
-            <FaRegCircle size={25} color="white"></FaRegCircle>
+            <BsCloudLightningRain
+              size={25}
+              color="white"></BsCloudLightningRain>
           )}
         </button>
       </div>

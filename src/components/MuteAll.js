@@ -6,7 +6,6 @@ function MuteAll() {
   const dispatch = useDispatch();
   const { muteAll } = useSelector((state) => state.muteAll);
   function handleMuteAll() {
-    console.log("dispatch");
     dispatch(muteUnmute());
   }
   return (

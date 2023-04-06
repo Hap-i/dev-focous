@@ -14,6 +14,7 @@ function AudioPlayer() {
   const [currentSong, setcurrentSong] = useState(null);
   const { muteAll } = useSelector((state) => state.muteAll);
   const audioRef = useRef();
+  const { musicVol } = useSelector((state) => state.audioVol);
   useEffect(() => {
     setcurrentSong(SongsData[0]);
   }, []);
@@ -41,13 +42,16 @@ function AudioPlayer() {
     setcurrentSong(SongsData[NextSongNum]);
   }
   useEffect(() => {
-    console.log("uef");
     if (muteAll) {
       audioRef.current.pause();
     } else if (muteAll === false && isPlaying === true) {
       audioRef.current.play();
     }
   }, [muteAll]);
+
+  useEffect(() => {
+    audioRef.current.volume = musicVol;
+  }, [musicVol]);
   return (
     <div className="relative z-10">
       {/* <div className="relative z-10 text-white">AudioPlayer</div>; */}

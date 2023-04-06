@@ -41,13 +41,13 @@ function AboutMe() {
             <span className="font-semibold text-teal-400">Hi</span>🙌
           </div>
           <div className="flex space-x-2">
-            <a href={PORTFOLIO_URL}>
+            <a href={PORTFOLIO_URL} target="_blank" rel="noreferrer">
               <TbWorldWww size={25}></TbWorldWww>
             </a>
-            <a href={TWITTER_URL}>
+            <a href={TWITTER_URL} target="_blank" rel="noreferrer">
               <AiFillTwitterSquare size={25}></AiFillTwitterSquare>
             </a>
-            <a href={LINKEDIN_URL}>
+            <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
               <AiFillLinkedin size={25}></AiFillLinkedin>
             </a>
           </div>

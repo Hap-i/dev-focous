@@ -3,6 +3,7 @@ import AudioPlayer from "./AudioPlayer";
 import MuteAll from "./MuteAll";
 import CurrentTime from "./CurrentTime";
 import RainDrop from "./RainDrop";
+import BollywoodToggle from "./BollywoodToggle";
 
 function Header() {
   return (
@@ -18,7 +19,7 @@ function Header() {
           <AudioPlayer></AudioPlayer>
           <RainDrop></RainDrop>
           <MuteAll></MuteAll>
-          {/* <MuteAll></MuteAll> */}
+          <BollywoodToggle></BollywoodToggle>
         </div>
       </div>
     </div>

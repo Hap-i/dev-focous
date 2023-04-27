@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   showVideo: false,
-  videoId: "",
+  videoId: "GaaFzkAflP0",
 };
 
 export const youtubeVideoSlice = createSlice({

@@ -33,7 +33,6 @@ function AudioPlayer() {
     );
   }, []);
   useEffect(() => {
-    console.log(audioTheme);
     audioRef.current.pause();
     if (audioTheme === "lofi") setSongsData(lofiSongData);
     else if (audioTheme === "bollywood") setSongsData(bollywoodSongData);
@@ -54,7 +53,6 @@ function AudioPlayer() {
   }, [currentSong]);
 
   function playpause() {
-    console.log(`assets/bg-audio/${audioTheme}/${currentSong?.fileName}`);
     if (isPlaying) {
       audioRef.current.pause();
     } else if (isPlaying === false && muteAll === false) {

@@ -8,7 +8,7 @@ export const sideBarBoxSlice = createSlice({
   name: "sideBarBox",
   initialState,
   reducers: {
-    showBox: (state, action) => {
+    changeBoxState: (state, action) => {
       if (state.showBox === action.payload) {
         state.showBox = null;
       } else {
@@ -19,6 +19,6 @@ export const sideBarBoxSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { showBox } = sideBarBoxSlice.actions;
+export const { changeBoxState } = sideBarBoxSlice.actions;
 
 export default sideBarBoxSlice.reducer;

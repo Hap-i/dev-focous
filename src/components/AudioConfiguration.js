@@ -20,7 +20,6 @@ function AudioConfiguration() {
       dispatch(changeVol({ type: type, value: rainVolRef.current.value }));
   }
   function changeSong(data) {
-    console.log(data);
     dispatch(changecurrentSong(data));
   }
 
